@@ -195,9 +195,11 @@ input[type="submit"] {
   width: 8.75%;
   height: 1.7rem;
   border-radius: 5px;
-  bottom: 1rem;
-  top: 0.3rem;
+  top: 0.1rem;
+  margin: auto; /* Added to center horizontally */
+  display: block; /* Ensures it takes full width */
 }
+
 
 input[type="number"] {
   position: relative;
@@ -206,7 +208,10 @@ input[type="number"] {
   width: 15%;
   height: 1.2rem;
   border-radius: 5px;
+  margin: auto; /* Center horizontally */
+  display: block; /* Ensures it takes full width */
 }
+
 
 #sitetraqdesc{
   padding-left: 15rem;
@@ -271,8 +276,25 @@ footer{
 
   .website{
     position: relative;
-    left: 29%;
+    left: 15%;
     border-radius: 7px;
     background-color: var(--formbg);
     color: var(--formtextcol);
   }
+#input-container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  margin-bottom: 20px; /* Add some space between input and result */
+}
+
+input[type="text"] {
+  font-size: 1.00rem;
+  width: 35vw;
+  text-align: center;
+  margin-right: 30px; /* Add some space between input and submit button */
+}
+
+input[type="submit"] {
+  width: 100px; /* Adjust width as needed */
+}
