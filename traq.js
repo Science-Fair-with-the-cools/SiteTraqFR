@@ -19,7 +19,7 @@ async function fetchWebsiteTraffic() {
         // Calculate carbon emissions in tons
         const carbonEmissions = websiteTraffic * 1.76 / 1000000; // Convert grams to tons
         const resultDiv = document.getElementById('result');
-        resultDiv.textContent = `Carbon emissions: ${carbonEmissions.toFixed(2)} tons from website traffic`;
+        resultDiv.textContent = `Émissions de carbone : ${carbonEmissions.toFixed(2)} tonnes créé par se site web`;
     } catch (error) {
         console.error(error);
     }
