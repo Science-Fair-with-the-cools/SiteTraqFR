@@ -1,1 +1,278 @@
+/* Colour Palette  - changed the colours a bit for better reading/look*/
+:root {
+  --formbg: #22577A;
+  --formtextcol: #FFFFFF;
+  --textcol: #22577A;
+  --buttonbg: #80ED99;
+  --btnhoverbg: #57CC99;
+  --bordercol: #38A3A5;
+  --bgcolor: #C7F9CC;
+}
 
+/* Styles: */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  text-align: center;
+  background-color: var(--bgcolor);
+  color: var(--textcol);
+  font-family: 'Roboto', sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--textcol);
+}
+
+#header {
+display: flex;
+position: sticky;
+margin: 0;
+padding: 10px;
+top: 0%;
+right: 0%;
+left: 0%;
+justify-content: space-evenly;
+align-items: center;
+background-color: var(--btnhoverbg);
+z-index: 5;
+border-radius: 21px;
+box-shadow: 5px 5px 5px grey;
+}
+
+#langbutton-en {
+  background-color: var(--buttonbg);
+  border: none;
+  color: var(--kaitoke-green);
+  font-size: 11px;  
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  padding: 7px;
+  margin: 5px;
+  border-radius: 25px;
+  transition: 0.3s;
+  position: absolute;
+  right: 8%;
+  top: 7%;
+}
+
+select,
+option {
+  background-color: var(--bgcolor);
+  border: none;
+  color: var(--textcol);
+  font-size: 12px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  padding: 1px;
+  margin: auto;
+  border-radius: 25px;
+}
+
+button,
+  input[type="submit"] {
+  background-color: var(--buttonbg);
+  border: none;
+  color: var(--textcol);
+  font-size: 10px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  padding: 1px;
+  margin: auto;
+  border-radius: 25px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 7.75%;
+  height: 1.5rem;
+}
+
+button:hover {
+  background-color: var(--btnhoverbg);
+  box-shadow: 10px 10px 20px grey;
+  color: var(--textcol);
+}
+
+  input[type="submit"]:hover {
+  background-color: var(--btnhoverbg);
+  box-shadow: 10px 10px 20px grey;
+  color: var(--textcol);
+}
+
+#langbutton-en:hover {
+  background-color: var(--btnhoverbg);
+  box-shadow: 10px 10px 20px grey;
+  color: var(--textcol);
+}
+
+#langbutton-fr:hover {
+  background-color: var(--btnhoverbg);
+  box-shadow: 10px 10px 20px grey;
+  color: var(--textcol);
+}
+
+#langbutton-fr {
+  background-color: var(--buttonbg);
+  border: none;
+  color: var(--textcol);
+  font-size: 11px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  padding: 7px;
+  margin: 5px;
+  border-radius: 25px;
+  transition: 0.3s;
+  position: absolute;
+  right: 0%;
+  top: 7%;
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+}
+
+.sites {
+  color: var(--textcol);
+}
+
+.question {
+  margin-bottom: 5px;
+  text-align: center;
+  /* Align text inside the question div to the left */
+}
+
+.question p {
+  margin-bottom: 5px;
+  /* Add some space below each question */
+}
+
+.question label,
+.question select {
+  display: inline-block;
+  /* Display labels and selects inline */
+}
+
+
+#form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+#questions {
+  display: flex;
+  background-color: var(--formbg);
+  color: var(--formtextcol);
+  border-radius: 7px;
+  border: 3px solid var(--bordercol);
+  width: 80%;
+  height: 53rem;
+  max-width: 600px;
+  /* Limit the maximum width for better readability */
+  margin: 0 auto;
+  /* Center the questions */
+  padding: 15px;
+  /* Add some padding for better appearance */
+}
+
+#projectdesc {
+  padding-top: 1.5rem;
+  left: 25%;
+  right: 25%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  align-items: center;
+}
+
+input[type="submit"] {
+  position: relative;
+  width: 8.75%;
+  height: 1.7rem;
+  border-radius: 5px;
+  bottom: 1rem;
+  top: 0.3rem;
+}
+
+input[type="number"] {
+  position: relative;
+  background-color: var(--bgcolor);
+  color: var(--textcol);
+  width: 15%;
+  height: 1.2rem;
+  border-radius: 5px;
+}
+
+#sitetraqdesc{
+  padding-left: 15rem;
+  padding-right: 15rem;
+}
+
+a:link {
+  color: var(--textcol);
+  background-color: transparent;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+a:visited {
+  color: var(--textcol);
+  background-color: transparent;
+}
+
+a:hover {
+  color: var(--textcol);
+  background-color: transparent;
+}
+
+a:active {
+  color: var(--textcol);
+  background-color: transparent;
+}
+
+#box{
+  position: relative;
+  background-color: var(--formbg);
+  color: var(--formtextcol);
+  border-radius: 7px;
+  border: 3px solid var(--bordercol);
+  padding-top: 5px;
+  height: 13rem;
+  width: 45%;
+  left: 27%;
+  bottom: 0.5rem;
+}
+
+footer{
+  padding-left: 15rem;
+  padding-right: 15rem;
+}
+
+#topbtn{
+  position: relative;
+  width: 15%;
+  height: 1.7rem;
+  border-radius: 7px;
+}
+
+
+  #webcontainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+  }
+
+  .website{
+    position: relative;
+    left: 29%;
+    border-radius: 7px;
+    background-color: var(--formbg);
+    color: var(--formtextcol);
+  }
