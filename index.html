@@ -1,1 +1,73 @@
+<!DOCTYPE html>
+<html>
 
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title id="title">EcoTraQ (Carbon footprint calculator)</title>
+  <link href="traq.css" rel="stylesheet" type="text/css" />
+  <link rel="icon" type="image/x-icon" href="https://www.iconpacks.net/icons/2/free-tree-icon-1578-thumb.png">
+</head>
+</head>
+
+<body>
+  <!-- language buttons -->
+  <button onclick="switchLanguage('en')" id="langbutton-en">English</button>
+  <button onclick="switchLanguage('fr')" id="langbutton-fr">French</button>
+
+  <main>
+<h1>SiteTraQ</h1>
+    <h3 id="subtitle">A Carbon Footprint Calculator</h3>
+    <!-- Header to access different parts of the site -->
+    <div id="header">
+      <div class="sites">
+        <a href="https://science-fair-with-the-cools.github.io/EcoTraQ/">EcoTraQ</a>
+
+        </div>
+
+        <div class="sites">
+          <a href="https://science-fair-with-the-cools.github.io/SiteTraQ/">SiteTraQ
+          </a>
+
+      </div>
+    </div>
+    <!-- Brief desc of project -->
+    <div id="sitetraqdesc">
+      <h2>What is SiteTraQ?</h2>
+      <p>Every single website on the internet has a carbon footprint. Physical hosting servers use electricity that use non-renewable energy sources to keep our internet alive as we know it. Want to know what a website's annual carbon footprint is? Find out by navigating to the "SiteTraQ" tab. 
+        Find out Below!</p>
+    </div>
+
+    <h2>Paste Website Link Here</h2>
+
+    <input type="text" class="website" placeholder="https://www.example.ca" style="font-size:1.00rem;width:35vw;text-align:center;margin-right:30%">
+    <input id="submit" type="submit">
+    <div id="result"></div> <!-- This is the div to display the result -->
+    <script src="traq.js"></script>
+</body>
+<footer>
+  <h2 id="about">About:</h2>
+  <p id="credits">Designed completely in HTML, CSS, and JS. All results are to be taken as near estimates based on Canadian/Ontario,
+    average, and national/provincial data. </p>
+  <p id="credits1">Created by: Cameron Lemoine and Hasan Ahmed</p>
+  <p id="credits2"> With help from: Will Reavie and Aaron Chung</p>
+  <p>
+    <a href="https://github.com/Science-Fair-with-the-cools/EcoTraQ" id="github" target="_blank">GitHub Repository</a>
+  <div>
+    <a href="https://projectboard.world/ysc/project/ecotraq-carbon-footprint-calculator" id="pbpage" target="_blank">ProjectBoard
+      Page</a>
+    <div>
+      <br>
+      <a href="https://www.dropbox.com/scl/fi/nu5uc4ykhm51pbvhqn26s/Sources-for-Ottawa-Regional-Science-Fair-EcoTraQ.pdf?rlkey=g6tgpyron6yiebu480syyd8or&dl=0" target="_blank">Sources</a>
+    </div>
+  </div>
+  </p>
+  <div class="buttons">
+    <button id="topbtn" onclick="backToTop()">Back to top</button>
+
+
+  </div>
+</footer>
+</main>
+</body>
+</html>
